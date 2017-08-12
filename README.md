@@ -4,11 +4,11 @@ Find dogs for dates
 
 ## Demo
 
-* [](link tba)
+* [Deploy App](https://doggie-dates.herokuapp.com/)
 
 ## Slides
 
-* [Google Slide](link tba)
+* [Google Slides](https://docs.google.com/presentation/d/19BC6MmoTYDu3UzQTWq2tMRpb-Wau4-mkNz0OpUJQKQk/edit#slide=id.g1fb77c2c98_0_219)
 
 ## Built With
 
