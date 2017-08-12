@@ -58,10 +58,4 @@ typings/
 .env
 
 # Configuration files
-config.json
 .DS_Store
-db/schema.sql
-config/config.json
-
-# Configuration settings
-config/config.json

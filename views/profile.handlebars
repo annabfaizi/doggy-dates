@@ -1,8 +1,15 @@
-
 {{> header-logged-in}}
 {{>sidenav}}
 <div class="dd-matches-container">
-    {{>matches}}
-    {{!-- {{>pet_pref}}
-    {{new_profile_form}} --}}
+    <h1>My Account</h1>
+	<div id="user-info" style="max-width: 400px;">
+		Email: 
+		<input value="{{user.email}}" disabled type="text" >
+		
+		<br>
+		Password: 
+		<input value="{{user.password}}" disabled type="password" >
+		
+	</div>
+	<a href="">Edit Account Details</a>
 </div>

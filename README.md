@@ -4,6 +4,7 @@ Find dogs near you for play-dates
 
 ## Demo
 
+
 * [Heroku](https://doggie-dates.herokuapp.com/)
 
 ## Slides
@@ -13,6 +14,10 @@ Find dogs near you for play-dates
 ## Built With
 
 * [MaterializeCSS](http://materializecss.com/) - A modern responsive front-end framework based on Material Design
+* bcrypt-nodejs
+* browser-cookies
+* passport
+* yelp-fusion
 
 ## Project Requirements
 

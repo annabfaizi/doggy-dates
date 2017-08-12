@@ -1,5 +1,7 @@
 'use strict';
-
-$('#parks').on('click', function(){
-  $("#park-results").toggle();
+$(document).ready(function(){
+		$.get( "api/yelp-results", function( data ) {
+		  console.log(data);
+		});
 });
+

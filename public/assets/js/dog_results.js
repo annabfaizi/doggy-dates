@@ -1,5 +1,7 @@
 'use strict';
 
+$(document).ready(function(){
+
 $("select").change(function(event){
     event.preventDefault();
     createFilters();
@@ -8,22 +10,31 @@ $("select").change(function(event){
 
 function resetForm() {
  	console.log('resetting ...');
-	$('#dog_form')[0].reset();
+
+    $('#dog_form').prop('selected', function() {
+        return this.defaultSelected;
+    });
+
+    $('#sex').prop('selected', function() {
+        return this.defaultSelected;
+    });
+
 }
 
 function createFilters() {
 
-	let energy = $( "#energy_level" ).val();
 	let sex = $( "#sex" ).val();
 	let size = $( "#size" ).val();
+	let energy = $( "#energy_level" ).val();
 	
 	let filterObj = {
-		energy: energy,
+		
 		sex: sex, 
-		size: size
+		size: size,
+		energy: energy
 	};
 
-	let filters = [energy, sex, size];
+	let filters = [sex, size, energy];
 
 	let activeFilters = [];
 
@@ -43,22 +54,16 @@ function filterResults(filterObj, activeFilters) {
 	let table = $("#dog-table");
 	let tr = $("tr");
 
-	for (let i = 1; i < tr.length; i++) {
+	for (let i = 0; i < tr.length; i++) {
 
-		let energy_td = tr[i].getElementsByTagName("td")[2];
+		
 		let sex_td = tr[i].getElementsByTagName("td")[3];
 		let size_td = tr[i].getElementsByTagName("td")[4];
+		let energy_td = tr[i].getElementsByTagName("td")[5];
 
 		let numMatchFilters = 0;
 
 		console.log(energy_td);
-
-		if (energy_td) { 
-			if (filterObj.energy === energy_td.innerHTML) {
-				// energy_td.attr('class', 'active' );
-				numMatchFilters++;
-			}
-		}
 
 		if (sex_td) {
 			if (filterObj.sex === sex_td.innerHTML) {
@@ -73,6 +78,14 @@ function filterResults(filterObj, activeFilters) {
 				numMatchFilters++;
 			}
 		}
+
+		if (energy_td) { 
+			if (filterObj.energy === energy_td.innerHTML) {
+				// energy_td.attr('class', 'active' );
+				numMatchFilters++;
+			}
+		}
+
 		console.log('match filter number', numMatchFilters);
 		console.log('match filter number', activeFilters.length);
 
@@ -83,24 +96,11 @@ function filterResults(filterObj, activeFilters) {
 		};
 	}
 
-	// ********* Working sort for one filter
-	// let input = $( "#energy_level").val();
-	// console.log(input);
-	// let filter = input.toUpperCase();
-
-	// let table = $("#dog-table");
-	// let tr = $("tr");
-
-	// for (let i = 0; i < tr.length; i++) {
-	// let td = tr[i].getElementsByTagName("td")[2];
-	// console.log(td);
-	// if (td) {
-	// 	if (td.innerHTML.toUpperCase() === filter) {
-	// 	    tr[i].style.display = "";
-	// 	  } else {
-	// 	    tr[i].style.display = "none";
-	// 	  }
-	// 	} 
-	// }
 
 };
+
+
+    $('.modal').modal();
+});
+
+

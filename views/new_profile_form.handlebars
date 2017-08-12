@@ -1,6 +1,8 @@
 {{> header-logged-in}}
+<div class="dd-doggie-background"></div>
 <div class="dd-login-signup-container">
-<h1>Profile Form</h1>
+<h1>Your Dog's Info</h1>
+<p></p>
 
 <form action="/profile-form-submit" method="post" id="dog_form">
 	Dog name:<br>
@@ -10,14 +12,14 @@
 	<input type="url" name="image" value="">
 	<br><br>
 	Location: (zip code or city state)<br>
-	<input type="text" name="location" value="">
-{{!-- 	<br><br>
-	Birthdate:<br>
-	<input type="text" name="dob" value="" class="datepicker"> --}}
+	<input type="text" name="zip_code" value="">
 	<br><br>
 	Birthdate:<br>
+	<input type="text" name="dob" value="" class="datepicker">
+	<br><br>
+{{!-- 	Birthdate:<br>
 	<input type="text" name="dob">
-	<br><br>
+	<br><br> --}}
 	Energy level:<br>
 	<select name="energy_level">
 	  <option value="low">Low</option>
