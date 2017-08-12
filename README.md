@@ -1,10 +1,10 @@
 # Doggie Date
 
-Find dogs for dates
+Find dogs near you for play-dates
 
 ## Demo
 
-* [Deploy App](https://doggie-dates.herokuapp.com/)
+* [Heroku](https://doggie-dates.herokuapp.com/)
 
 ## Slides
 
@@ -17,13 +17,13 @@ Find dogs for dates
 ## Project Requirements
 
 * Must use a Node and Express Web Server ✔
-* Must be backed by a MySQL Database with a Sequelize ORM
-* Must have both GET and POST routes for retrieving and adding new data
-* Must be deployed using Heroku (with Data)
-* Must utilize at least one new library, package, or technology that we haven’t discussed
-* Must have a polished frontend / UI
-* Must have folder structure that meets MVC Paradigm
-* Must meet good quality coding standards (indentation, scoping, naming)
+* Must be backed by a MySQL Database with a Sequelize ORM ✔
+* Must have both GET and POST routes for retrieving and adding new data ✔
+* Must be deployed using Heroku (with Data) ✔
+* Must utilize at least one new library, package, or technology that we haven’t discussed ✔
+* Must have a polished frontend / UI ✔
+* Must have folder structure that meets MVC Paradigm ✔
+* Must meet good quality coding standards (indentation, scoping, naming) ✔
 
 ## Authors
 
@@ -32,7 +32,7 @@ Find dogs for dates
 * **Margeret Choi** - *javascript* - [margaretchoi](https://github.com/margaretchoi)
 * **Waqas Alsubayee** - *javascript* - [Waqas84](https://github.com/Waqas84)
 
-See also the list of [contributors](https://github.com/alanttran/JobBnB/graphs/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/alanttran/doggy-dates/graphs/contributors) who participated in this project.
 
 ## Acknowledgments
 
