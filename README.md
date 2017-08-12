@@ -9,7 +9,7 @@ Find dogs near you for play-dates
 
 ## Slides
 
-* [Google Slides](https://docs.google.com/presentation/d/19BC6MmoTYDu3UzQTWq2tMRpb-Wau4-mkNz0OpUJQKQk/edit#slide=id.g1fb77c2c98_0_219)
+* [Presentation](https://docs.google.com/presentation/d/19BC6MmoTYDu3UzQTWq2tMRpb-Wau4-mkNz0OpUJQKQk/edit#slide=id.g1fb77c2c98_0_219)
 
 ## Built With
 
